@@ -1,0 +1,11 @@
+{
+    "name": "DocumentRequest",
+    "alias": "documentrequest",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\DocumentRequest\\Providers\\DocumentRequestServiceProvider"
+    ],
+    "files": []
+}

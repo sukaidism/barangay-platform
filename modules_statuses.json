@@ -1,0 +1,10 @@
+{
+    "Resident": true,
+    "Household": true,
+    "Official": true,
+    "DocumentRequest": true,
+    "Payment": true,
+    "Announcement": true,
+    "Blotter": true,
+    "Event": true
+}

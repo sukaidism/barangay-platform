@@ -1,0 +1,11 @@
+{
+    "name": "Official",
+    "alias": "official",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Official\\Providers\\OfficialServiceProvider"
+    ],
+    "files": []
+}
