@@ -11,6 +11,7 @@ class Role extends Model
 
     public function users(): BelongsToMany
     {
-        return $this->belongsToMany(User::class);
+        return $this->belongsToMany(User::class, 'model_has_roles', 'role_id', 'model_id')
+            ->wherePivot('model_type', User::class);
     }
 }

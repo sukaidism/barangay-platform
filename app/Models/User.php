@@ -51,7 +51,8 @@ class User extends Authenticatable
 
     public function roles(): BelongsToMany
     {
-        return $this->belongsToMany(Role::class);
+        return $this->belongsToMany(Role::class, 'model_has_roles', 'model_id', 'role_id')
+            ->wherePivot('model_type', self::class);
     }
 
     public function hasRole(string $role): bool

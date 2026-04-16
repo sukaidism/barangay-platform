@@ -51,9 +51,6 @@ class RbacSeederTest extends TestCase
             'model_id' => $admin->id,
         ]);
 
-        $this->assertDatabaseHas('role_user', [
-            'role_id' => $adminRoleId,
-            'user_id' => $admin->id,
-        ]);
+        $this->assertTrue($admin->hasRole('admin'));
     }
 }

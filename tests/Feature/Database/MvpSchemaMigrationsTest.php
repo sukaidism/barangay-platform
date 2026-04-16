@@ -50,6 +50,7 @@ class MvpSchemaMigrationsTest extends TestCase
         $this->assertTrue(Schema::hasTable('model_has_roles'));
         $this->assertTrue(Schema::hasTable('model_has_permissions'));
         $this->assertTrue(Schema::hasTable('role_has_permissions'));
+        $this->assertFalse(Schema::hasTable('role_user'));
 
         $this->assertTrue(
             Schema::hasColumns('roles', [
