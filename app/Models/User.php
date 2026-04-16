@@ -67,6 +67,6 @@ class User extends Authenticatable
 
     public function resident(): HasOne
     {
-        return $this->hasOne(\Modules\Resident\Models\Resident::class);
+        return $this->hasOne(\App\Modules\Resident\Models\Resident::class);
     }
 }
